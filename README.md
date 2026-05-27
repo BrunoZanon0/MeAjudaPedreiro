@@ -4,6 +4,11 @@
 
 MeAjudaPed é uma plataforma web que conecta usuários comuns a pedreiros, facilitando o contato, contratação e acompanhamento de serviços de construção e reforma.
 
+<img width="551" height="920" alt="image" src="https://github.com/user-attachments/assets/d6b92a6e-faf1-43d9-9ac4-651a9d0c84be" />
+<img width="542" height="918" alt="image" src="https://github.com/user-attachments/assets/d5f70252-253a-4525-a56c-e53102a93d5d" />
+<img width="540" height="919" alt="image" src="https://github.com/user-attachments/assets/2d679b8f-8e1f-4cf9-b02b-bd6922e3d8c1" />
+
+
 ## Funcionalidades
 
 - **Cadastro e Login**: Usuários e pedreiros podem criar contas e acessar a plataforma.
