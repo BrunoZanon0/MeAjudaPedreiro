@@ -1,58 +1,70 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
+# MeAjudaPed
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+MeAjudaPed é uma plataforma web que conecta usuários comuns a pedreiros, facilitando o contato, contratação e acompanhamento de serviços de construção e reforma.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Funcionalidades
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Cadastro e Login**: Usuários e pedreiros podem criar contas e acessar a plataforma.
+- **Feed de Trabalhos**: Visualize trabalhos realizados, portfólios e avaliações de pedreiros.
+- **Sistema de Seguidores**: Siga pedreiros para acompanhar novidades e novos trabalhos.
+- **Busca de Profissionais**: Encontre pedreiros por especialidade, localização ou avaliações.
+- **Contato Direto**: Converse e negocie diretamente com os profissionais pela plataforma.
+- **Dashboard**: Área exclusiva para usuários e pedreiros acompanharem suas atividades.
 
-## Learning Laravel
+## Tecnologias Utilizadas
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Backend**: Laravel (PHP)
+- **Frontend**: Blade, Vite, JavaScript, CSS
+- **Banco de Dados**: MySQL ou compatível
+- **Docker**: Para ambiente de desenvolvimento
+- **Redis**: Para cache e filas
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Como rodar o projeto
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+1. Clone o repositório:
+	```bash
+	git clone <repo-url>
+	cd meajudaped
+	```
+2. Instale as dependências PHP e Node.js:
+	```bash
+	composer install
+	npm install
+	```
+3. Configure o arquivo `.env` com suas variáveis de ambiente.
+4. Gere a chave da aplicação:
+	```bash
+	php artisan key:generate
+	```
+5. Execute as migrations:
+	```bash
+	php artisan migrate
+	```
+6. (Opcional) Suba o ambiente com Docker:
+	```bash
+	docker-compose up -d
+	```
+7. Inicie o servidor de desenvolvimento:
+	```bash
+	php artisan serve
+	```
+8. Acesse em [http://localhost:8000](http://localhost:8000)
 
-## Agentic Development
+## Estrutura do Projeto
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+- `app/` - Código principal da aplicação (Controllers, Models, Services)
+- `resources/views/` - Templates Blade (frontend)
+- `routes/` - Rotas web e console
+- `database/` - Migrations, seeders e factories
+- `public/` - Arquivos públicos (index.php, assets)
+- `config/` - Arquivos de configuração
 
-```bash
-composer require laravel/boost --dev
+## Contribuição
 
-php artisan boost:install
-```
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+## Licença
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Este projeto está sob a licença MIT.
